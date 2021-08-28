@@ -1,0 +1,494 @@
+
+/* custom varibles to store colors */
+:root
+{
+	--custom_yellow:#FEE715FF;
+	--custom_black:#101820FF;
+	--custom_white:#eee;
+}
+html
+{
+	font-size: 16px;
+	/* overflow-x: hidden; */
+}
+
+/* .parent
+{
+	display: none;
+} */
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Baloo Bhai 2', cursive;
+}
+/* styling the preloader */
+.preloader
+{
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	background-color: white;
+	z-index: 12;
+	display: flex;
+	align-items: center;
+	overflow: hidden;
+	justify-content: center;
+
+}
+
+.changed_preloader
+{
+	opacity: 0;
+	visibility: hidden;
+	overflow: auto;
+}
+/*styling the main container*/
+.main_container
+{
+	min-height: 100vh;
+	background-color: var(--custom_black);
+	margin: 0;
+	padding: 10px;
+	
+
+}
+/* styling the header of page */
+.header
+{
+	height: 70px;
+	width: 80%;
+
+	padding: 5px;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+		
+	margin: 0px auto;
+	border-radius: 20px;
+	color: white;
+	
+
+
+	
+	
+
+}
+/* styling the div with background of logo image */
+.text_logo h1
+{
+margin: 0;
+font-size: 1.8rem
+	
+
+}
+/* desiging the div with class nav_menu containing the ul */
+.nav_menu
+{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+/* styling the ul with class list */
+.list
+{
+	list-style-type: none;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 500px;
+	margin: 0;
+	padding: 0;
+}
+/* designing the anchor tags */
+.anchor
+{
+	text-decoration: none;
+	color: var(--custom_white);
+	font-size: 1.2rem;
+	transition: .1s ease;
+	padding:2px 10px;
+	border-radius: 5px ;
+}
+.anchor:hover
+{
+	color:var(--custom_black);
+    background-color: var(--custom_yellow);
+
+}
+#home
+{
+	color:var(--custom_black);
+    background-color: var(--custom_yellow);
+}
+/* desiginig the div with class hamburger that contains the bars  */
+.hamburger
+{
+	font-size: 2rem;
+	display: none;
+	margin-top: 10px;
+}
+/* desiginign the bars inside the div with class hamburger */
+.bars
+{
+	display: block;
+	width: 25px;
+	height: 3px;
+	margin: 3px auto;
+	background-color: var(--custom_yellow);
+	transition: 0.5s ease-in-out;
+}
+/* ===================================================================================== */
+
+/* designing the section */
+.secion_containing_dynamic_heading
+{
+
+	
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	/* background-color: red; */
+	width: max-content;
+	margin:50px auto;
+
+}
+
+/* type writer effect style */
+#dynamic_heading
+{
+		color:#eee;
+}
+#typed
+{
+	color: #FEE715FF;
+}
+	
+	
+.blinking_cursor
+{
+	background-color:#FEE715FF;
+		width: 4px;
+		display: inline-block;
+		margin-left: 3px;
+		animation: blinking 1s infinite;
+}
+/* class that will be switched */
+.non_blinking_cursor
+{
+		animation: none;
+}
+	
+/* desiging the parallax */
+.parallax
+{
+	height: 100vh;
+	position: relative;
+	background-image: url("../Images/florian-olivo-4hbJ-eymZ1o-unsplash.jpg");
+	background-position: center;
+	background-size: cover;
+	background-attachment: fixed;
+
+	
+
+}
+.parallax::before
+{
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.6);	
+}
+
+.quote
+{
+	color: var(--custom_white);
+	/* background-color: red; */
+	font-size: 2rem;
+	
+}
+.quote p
+{
+	text-align: center;
+}
+/* colore span tags in quote */
+.colored
+{
+	color: var(--custom_yellow);
+}
+/* styling the div containing the cards in front(home) page */
+.carding
+{
+	/* border: 1px solid var(--custom_white); */
+	color: var(--custom_white);
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 10px;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	
+
+}
+.carded_container
+{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+.carded_container p
+{
+	font-size: 2rem;
+}
+/* styling the individual card element at once */
+.carded
+{
+	width: 500px;
+	min-height: 250px;
+	border: 2px solid var(--custom_yellow);
+	border-radius: 20px;
+	margin: 10px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	padding: 20px;
+	
+}
+/* styling the image tags inside team section */
+.team_img
+{
+	width: 210px;
+	height: 210px;
+	position: relative;
+	border-radius: 50%;
+}
+/* styling the contact div containing the form and heading */
+.contact
+{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	flex-direction: column;
+	padding: 20px;
+	background-color: var(--custom_black);
+	height: 1000px;
+}
+/* styling the form inside the div with class contact */
+.contact form
+{
+	width: 500px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	/* background-color: var(--custom_yellow); */
+	padding: 20px;
+	border-radius: 20px;
+	border: 2px solid var(--custom_yellow);
+	
+	
+}
+/* this div is parent div of form */
+.contact_child
+{
+
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+	flex-wrap: wrap;
+	height: 2000px;
+	/* background-color: red; */
+	
+}
+	
+/* designing the div with class socil media inside div with class contact */
+.social_media
+{
+	
+	/* border:1px solid white; */
+	color: var(--custom_white);
+	width: 700px;
+	
+	
+}
+/* styling each div inside form */
+.form_section
+{
+	display: flex;
+	flex-direction: column;
+	/* align-items: center; */
+	justify-content: space-between;
+	margin-top: 20px;
+	
+
+	
+	/* background-color: red; */
+}
+.contact label
+{
+	color: var(--custom_white);
+	font-size: 1.2rem;
+}
+.contact h1
+{
+	color: var(--custom_yellow);
+	font-size: 3rem;
+}
+#underline
+{
+	color: var(--custom_yellow);
+
+	width: 400px;
+	height: 3px;
+	
+
+}
+.input
+{
+	border: none;
+	outline: none;
+	padding: 6px;
+	border-radius:10px ;
+	width: 300px;
+}
+
+#submit
+{
+	margin-top: 20px;
+	height: 50px;
+	padding: 10px;
+	border: none;
+	outline: none;
+	border-radius: 20px;
+	width: 300px;
+	font-size: 1.2rem;
+	transition: .5s ease;
+	
+	
+
+}
+#submit:hover
+{
+	background-color: var(--custom_yellow);
+	color: var(--custom_black);
+}
+
+/* styling the status bar in form */
+#status
+{
+	color: var(--custom_white);
+	margin-top: 20px;
+}
+#textarea
+{
+	width: 300px;
+	resize: none;
+}
+/* cre{ating the animation for cursor*/
+@keyframes blinking {
+	
+		0%{
+			background-color: #FEE715FF;
+		}
+		49%
+		{
+			background-color: #FEE715FF;
+		}
+		50%
+		{
+			background-color: #101820FF;
+	
+		}
+		99%
+		{
+			background-color: #101820FF;
+	
+		}
+		100%
+		{
+			background-color: #FEE715FF;
+		}
+		
+	}
+
+
+	/* creating the medai query to make website responsive  */
+@media screen and (max-width:900px)
+{
+
+	
+	.list
+	{
+		display: none;
+	}
+	.hamburger
+	{
+		display: block;
+		margin-top: 20px;
+		
+	}
+	.header
+	{
+		flex-direction: column;
+		height: auto;
+	
+		
+	}
+	.list2
+	{
+		display: block;
+		width: 100%;
+		margin-top: 30px;
+		height: 200px;
+		display: flex;
+		justify-content:space-between;
+		align-items: center;
+		flex-direction: column;
+		/* background-color: red; */
+		padding: 10px;
+		
+	}
+	.nav_menu
+	{
+		flex-direction: column;
+		
+	}
+
+	/* active class will be actived when we click on bars */
+	.cross .bars:nth-child(2)
+	{
+		opacity: 0;
+	}
+	.cross .bars:nth-child(1)
+	{
+		transform:translateY(6px) rotate(45deg);
+	}
+	.cross .bars:nth-child(3)
+	{
+		transform:translateY(-6px) rotate(-45deg);
+	}
+	.contact
+	{
+		height: 100%;
+	}
+	.contact_child
+	{
+		height: 100%;
+	}
+	#underline
+	{
+		width: 100%;
+	}
+
+}

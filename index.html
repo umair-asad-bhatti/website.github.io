@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Custom style.css file link here -->
+  <link rel="stylesheet" type="text/css" href="style/style.css">
+  <!-- box icons file here -->
+  <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+  <!-- AOS animation library -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+  <!-- google fonts file link here -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&family=Source+Sans+Pro:wght@300&display=swap"
+    rel="stylesheet">
+    <link rel="shortcut icon" href="svg/bxs-paper-plane.svg" type="image/x-icon">
+
+  <title>Mario Tech | umair asad</title>
+
+</head>
+
+<body>
+
+  <div class="preloader">
+    <img src="/preloader/Misterious mist.gif" alt="">
+  </div>
+  <div class="parent">
+    <div class="main_container">
+      <header class="header">
+        <div class="text_logo">
+          <!-- this divs contains the logo as backgound image -->
+          <h1 data-aos="fade-right">Umair Asad</h1>
+        </div>
+        <div class="nav_menu">
+          <div class="hamburger">
+            <span class="bars"></span>
+            <span class="bars"></span>
+            <span class="bars"></span>
+          </div>
+          <ul class="list" data-aos="fade-left">
+            <li><a class="anchor" href="#" id="home">Home</a></li>
+            <li><a class="anchor" href="blogs.html">Blogs</a></li>
+            <li><a class="anchor" href="about.html">About</a></li>
+          </ul>
+        </div>
+      </header>
+      <section class="secion_containing_dynamic_heading">
+        <div class="container " data-aos="fade-down" data-aos-delay="1000">
+
+          <h1 id="dynamic_heading">I am a <span id="typed"></span><span class="blinking_cursor"
+              id="cursor">&nbsp;</span>
+          </h1>
+        </div>
+      </section>
+      <div class="quote container" data-aos="fade-down" data-aos-delay="1500">
+        <p>"Success is not <span class="colored">happiness</span>.Happiness is <span class="colored">success</span>.If
+          you <span class="colored">love</span> what you are doing you will be <span class="colored">successful</span>"
+        </p>
+      </div>
+      <div class="carding container my-5">
+        <div>
+          <h1>Our Team</h1>
+        </div>
+        <div class="carded_container container">
+          <div class="carded " data-aos="fade-right">
+            <img class="team_img" src="Images/umair.jpg" alt="">
+            <p>Umair Asad</p>
+          </div>
+          <div class="carded" data-aos="fade-down">
+            <img class="team_img" src="Images/faizan.jpg" alt="">
+            <p>Faizan Akif</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- div with image for some parallax effext -->
+    <div class="parallax">
+    </div>
+    <div class="contact container-fluid">
+      <h1 data-aos="fade-up">Wanan work with me?</h1>
+      <hr data-aos="fade-up" id="underline">
+      <div class="contact_child container-fluid">
+
+        <div data-aos="fade-right" class="social_media">
+          <h1>Send your requests to become part of team</h1>
+        </div>
+
+        <form id="form" data-aos="fade-up" action="https://formspree.io/f/mleaaern" method="POST">
+
+          <div class="form_section">
+            <label for="firstname">First Name</label>
+            <input name="firstname" class="input" type="text" required id="firstname">
+          </div>
+          <div class="form_section">
+            <label for="secondname">Second Name</label>
+            <input name="lastname" class="input" type="text" required id="secondname">
+          </div>
+          <div class="form_section">
+            <label for="email">Your Emails Address</label>
+            <input name="email" class="input" type="text" required id="email">
+          </div>
+          <div class="form_section">
+            <label for="message">Enter your message</label>
+            <textarea name="message" id="textarea" class="input" name="message" id="message" cols="30"
+              rows="10"></textarea>
+          </div>
+          <div class="form-section">
+            <button id="submit" type="submit">Submit</button>
+          </div>
+          <div id="status">
+
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+  <!-- cusomt java script file link here -->
+  <script src="js/script.js"></script>
+  <!-- AOS animation -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+  <!--  Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+    crossorigin="anonymous"></script>
+  <script>
+    AOS.init();
+  </script>
+
+</body>
+
+</html>

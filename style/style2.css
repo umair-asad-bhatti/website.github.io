@@ -1,0 +1,131 @@
+:root
+{
+
+    --bg-gradient:linear-gradient(45deg,
+    #845ec2,
+    #d65db1,
+    #ff6f91,
+    #ff9671,
+    #ffc75f
+       );
+
+    --txt-gradient:linear-gradient(45deg,
+       #d65db1,
+       #ff6f9f,
+       #3385ff,
+       #845ec2
+       );
+
+       --custom_yellow:#FEE715FF;
+       --custom_black:#101820FF;
+       --custom_white:#eee;
+
+      
+}
+
+  
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Baloo Bhai 2', cursive;
+    box-sizing: border-box;
+    /* overflow-x: hidden; */
+    
+
+}
+.about
+{
+    
+     
+    /* background-image: var(--bg-gradient); */
+    background-color: var(--custom_black);
+    background-position: left;
+    background-size: 500%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+
+    padding: 20px;
+
+    animation: switcher 20s alternate infinite;
+    
+ 
+
+   
+}
+#about_heading
+{
+    color: var(--custom_yellow);
+}
+#div_with_image
+{
+    
+  max-width: 200px;
+  height: 170px;
+  margin-top: 20px;
+    
+}
+#img
+{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+#div_with_content
+{   
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    
+}
+.insider
+{
+    width: 400px;
+    /* background-color: rgba(255, 255, 255, 0.281); */
+    background-color: var(--custom_yellow);
+    padding: 20px;
+    
+    border-radius: 20px;
+    box-shadow: 0px 5px 40px rgba(0, 0, 0, 0.479);
+}
+.insider_heading
+{
+    /* background-image: var(--txt-gradient);
+     */
+     background-color: var(--custom_black);
+    background-position: left;
+    background-size: 500%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    font-weight: 900;
+    animation: switcher 3s alternate infinite;
+
+}
+.go-back
+{
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.go-back a
+{
+    text-decoration: none;
+    background-color: var(--custom_yellow);
+    color: var(--custom_black);
+    padding: 5px 10px;
+    border-radius: 20px;
+
+}
+.go-back :hover
+{
+    color: var(--custom_black);
+
+}
+
